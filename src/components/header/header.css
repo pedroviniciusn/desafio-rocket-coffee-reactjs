@@ -1,0 +1,139 @@
+header {
+    padding: 5rem 6rem 6rem;
+    display: flex;
+    width: 70%;
+    margin: 0 auto ;
+}
+
+header .logo {
+    width: 4%;
+    cursor: pointer;
+}
+
+header .logo-mobile {
+    display: none;
+}
+
+header nav {
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+}
+
+header nav ul {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+
+header nav #active {
+    position: absolute;
+    left: 0%;
+    top: 8rem;
+    height: 50%;
+    width: 80%;
+    background-color: var(--background);
+    display: flex;
+    flex-direction: column;
+
+}
+
+header nav ul .cName {
+    list-style: none;
+}
+
+header nav ul li:hover {
+    border-bottom: 1px solid #8257E5;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: var(--text-color);
+}
+
+header button {
+    border: 2px solid var(--button);
+    background: none;
+    color: var(--text-color);
+    width: 18%;
+    border-radius: 1rem;
+    cursor: pointer;
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: background 0.2s;
+}
+
+
+header button:hover {
+    background: var(--button);
+}
+
+header .menu {
+    display: none;
+}
+
+@media (max-width: 440px) {
+    header {
+        padding: 3rem 2rem 2rem;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        margin: 0 auto;
+        border-bottom: 0.1px solid var(--border-menu-mobile);
+    }
+
+    header .logo {
+       display: none;
+    }
+
+    header button {
+        display: none;
+    }
+    
+    header .logo-mobile {
+        display: block;
+    }
+
+    header .menu {
+        display: block;
+    }
+
+    header nav #hidden {
+        display: none;
+    }
+
+    header nav #active {
+        position: absolute;
+        left: 0%;
+        top: 8.4rem;
+        height: 118vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        text-align: start;
+        justify-content: start;
+        opacity: 1;
+        z-index: 1;
+        background-color: black;
+    }
+
+    header nav #active li {
+        list-style: none;
+        background: var(--background);
+        border-bottom: 1px solid var(--border-menu-mobile);
+        width: 100%;
+        height: 6%;
+        align-items: center;
+        padding: 1rem;
+    }
+    header nav #active li:hover {
+        border-left: 5px solid var(--button);
+    }
+}

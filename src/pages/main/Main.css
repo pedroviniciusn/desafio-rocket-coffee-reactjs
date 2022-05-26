@@ -1,0 +1,147 @@
+main {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    width: 52%;
+    height: 40%;
+    text-align: center;
+}
+
+
+main .title h1 {
+    color: var(--text-color);
+    display: none;
+}
+
+main .button-mobile {
+    display: flex;
+    border: 2px solid var(--button);
+    background: none;
+    color: var(--text-color);
+    width: 19%;
+    height: 6%;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+main button .arrow {
+   
+    padding: 0px 0 0 10px;
+}
+
+main .great-coffee {
+    color: var(--text-color);
+}
+
+main .great-coffee h2 {
+    font-size: 115px;
+    font-weight: bold;
+    margin-bottom: -4%;
+    letter-spacing: -5px; 
+}
+
+main .great-coffee span {
+    font-size: 11.5rem;
+    font-weight: bold; 
+    letter-spacing: -4px;
+    color: black;
+    text-shadow: 
+    -2px 0 
+    #8257E5, 
+    0 2px 
+    #8257E5,
+    2px 0 
+    #8257E5,
+    0 -2px 
+    #8257E5;
+}
+
+main .rocket-coffee {
+    width: 100%;
+    margin-top: -9%;
+}
+
+@media (max-width: 440px) {
+    main {
+        position: absolute;
+        top: 54%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        height: 65%;
+        text-align: center;
+    }
+
+    main .title {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    main .title h1 {
+        color: var(--text-color);
+        font-size: 30px;
+        display: block;
+    }
+
+    main .button-mobile {
+        display: flex;
+        border: 2px solid var(--button);
+        background: none;
+        color: var(--text-color);
+        width: 40%;
+        height: 6%;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 12px;
+        font-weight: 700;
+        text-transform: uppercase;
+        align-items: center;
+        justify-content: center;
+        margin: 55px auto;
+    }
+
+    main .button-mobile:hover {
+        background-color: #8257E5;
+    }
+    main .great-coffee {
+        color: var(--text-color);
+        margin-top: 5%;
+    }
+
+    main .great-coffee h2 {
+        font-size: 60px;
+        font-weight: bold;
+        margin-bottom: -4%;
+        letter-spacing: -5px; 
+    }
+    
+    main .great-coffee span {
+        font-size: 60px;
+        font-weight: bold; 
+        letter-spacing: -4px;
+        color: black;
+        text-shadow: 
+        -2px 0 
+        #8257E5, 
+        0 2px 
+        #8257E5,
+        2px 0 
+        #8257E5,
+        0 -2px 
+        #8257E5;
+    }
+
+    main .rocket-coffee {
+        width: 100%;
+        margin-top: 8%;
+    }
+}

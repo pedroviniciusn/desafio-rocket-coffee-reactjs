@@ -1,0 +1,38 @@
+:root {
+    --backgrond: #000;
+    --text-color: #FFF;
+    --button: #8257E5;
+    --border: #29292E;
+    --border-menu-mobile: #A8A8B3;
+    --text-color-menu-mobile: #E1E1E6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: var(--backgrond);
+    height: 100vh;
+    background: url(../assets/blur-1.png), url(../assets/blur-2.png) var(--backgrond);
+    background-repeat: no-repeat, no-repeat;
+    background-position: bottom left 0px,  top right 0px;
+    font-family: 'Manrope', sans-serif;
+}
+
+@media (max-width: 440px) {
+    body {
+        background-color: var(--backgrond);
+        height: 120vh;
+        background-image: url(../assets/blur-mobile.png);
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: 100%;
+    }
+}
